@@ -1,0 +1,56 @@
+.Banner_container >img
+{
+    width: 100%;
+    height: 543px;
+    margin-bottom: 25px;
+}
+.Banner_container li
+{
+    width: 100%;
+    height: 247px;
+    display: flex;
+    list-style: none;
+    padding: 0px 64px 0px 64px;
+    column-gap: 20px;
+    margin-bottom: 25px;
+}
+.Banner_container li ul
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.Banner_container li ul img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.Banner_container li ul:first-child >div
+{
+    width: 163px;
+    height: 60px;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    line-height: 25px;
+    padding: 0px 5px;
+    border-radius: 20px 0px 0px 0px;
+    font-weight: 700;
+}
+.Banner_container li ul:first-child >div>div
+{
+    display: flex;
+}
+.Banner_container li ul:first-child >div>div>h2
+{
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(#001899,#009def);
+    font-size: 35px;
+    padding: 1px;
+}
+.Banner_container li ul:first-child >div>div>p
+{
+    margin-top: 6px;
+}

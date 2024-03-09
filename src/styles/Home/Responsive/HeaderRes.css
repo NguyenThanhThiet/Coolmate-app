@@ -1,0 +1,28 @@
+@media screen and (max-width:991px) {
+    .Header_container
+    {
+        padding: 0px 20px;
+        height: 58px;
+    }
+    .Header_Menu
+    {
+        display: flex;
+        column-gap: 10px;
+    }
+    .Header_Menu >svg
+    {
+        font-size: 30px;
+    }
+    .Header_container .Header_Logo {
+        width: 100px;
+        height: 100px;
+    }
+    .Header_Nav
+    {
+        display: none;
+    }
+    .Header_ActionUser .Header_ActionUser_Button
+    {
+        display: none;
+    }
+}

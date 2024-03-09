@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.Header_container {
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 0px 64px;
+    align-items: center;
+}
+.Header_Menu
+{
+    display: none;
+}
+.Header_container .Header_Logo {
+    width: 120px;
+    height: 100px;
+}
+
+.Header_Nav {
+    height: 100%;
+    display: flex;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+.Header_Nav ul
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 16px;
+}
+.Header_Nav ul:hover
+{
+    background-color: rgb(71, 70, 70);
+}
+
+
+
+.Header_ActionUser {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.Header_ActionUser .Header_ActionUser_Button {
+    display: flex;
+    align-items: center;
+    background-color: #e8e8e8;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0px 10px;
+    column-gap: 5px;
+}
+
+.Header_ActionUser .Header_ActionUser_Button>svg {
+    color: #212121;
+    font-size: 30px;
+}
+
+.Header_ActionUser .Header_ActionUser_Button>input {
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.Header_ActionUser>svg {
+    font-size: 30px;
+}
+.Header_ActionUser .Header_ActionUser_Buy
+{
+    position: relative;
+}
+.Header_ActionUser .Header_ActionUser_Buy svg
+{
+    font-size: 30px;
+}
+.Header_ActionUser .Header_ActionUser_Buy >p
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f9f86c;
+    color: black;
+    text-align: center;
+    line-height: 15px;
+    top: 20px;
+    left: 15px;
+}

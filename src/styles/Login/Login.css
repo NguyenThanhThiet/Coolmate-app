@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+.Login_container
+{
+    position: relative;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 20px 300px;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+.Login_container .body
+{
+    position: relative;
+    width: 880px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 95vh;
+    padding: 30px 20px 0px 30px;
+}
+.Login_container .body>div
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Login_container .Login_Form
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.Login_container .Login_Form h2
+{
+    font-size: 40px;
+}
+.Login_container .Login_Form >p+p
+{
+    font-weight: 900;
+}
+
+.Login_container .Login_Form >div
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.Login_container .Login_Form >div >hr
+{
+    width: 70px;
+}
+.Login_container .Login_Form >div p+hr
+{
+    width: 100%;
+}
+
+.Login_container .Login_Form li
+{
+    display: flex;
+    column-gap: 10px;
+}
+.Login_container .Login_Form li>:first-child
+{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #d4d4d4;
+}
+.Login_container .Login_Form li>:last-child
+{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    padding-top: 5px;
+    color: #2959a7;
+}
+
+.Login_container .Login_Form form 
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.Login_container .Login_Form form input
+{
+    height: 50px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    border: 2px solid #cecdcd;
+}
+.Login_container .Login_Form form>div
+{
+    position: relative;
+    height: 50px;
+    align-items: center;
+}
+.Login_container .Login_Form form >div input
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0px 0px;
+    border: 1px solid #cecdcd;
+    padding: 0px 45px 0px 10px;
+}
+.Login_container .Login_Form form >div >svg
+{
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 10px);
+}
+input:focus
+{
+    outline-color: rgb(57, 57, 241);
+}
+
+
+.Login_container .Login_Form form button
+{
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.Login_container .Login_Form .Login_ChangePages
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Login_container .Login_Form .Login_ChangePages a
+{
+    color: #3d6bd6;
+    text-decoration: none;
+}
+.Login_Advertise
+{
+    width: 50%;
+}
+.Login_Advertise img
+{
+    width: 100%;
+}
+.Login_container .body>div:first-child>svg
+{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: -20px;
+    right: -25px;
+}
+.Login_container .body>div:first-child>svg:hover
+{
+    scale: 1.1;
+}
