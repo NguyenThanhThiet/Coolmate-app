@@ -2,18 +2,21 @@
 .SignUp_container
 {
     position: relative;
-    border-radius: 10px;
     background-color: black;
-    padding: 20px 300px;
     font-family: "Manrope", sans-serif;
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
+    background-color: #2959a7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .SignUp_container .body
 {
-    position: relative;
+    position: fixed;
     background-color: #ffffff;
     border-radius: 20px;
     width: 880px;
@@ -156,7 +159,7 @@ input:focus
 {
     width: 100%;   
 }
-.SignUp_container .body>div:first-child>svg
+.SignUp_container .body>div:first-child>a>svg
 {
     width: 50px;
     height: 50px;
@@ -168,7 +171,10 @@ input:focus
     top: -20px;
     right: -25px;
 }
-.SignUp_container .body>div:first-child>svg:hover
+.SignUp_container .body>div:first-child>a>svg:hover
 {
     scale: 1.1;
+}
+.eyesHidden{
+    display: none;
 }

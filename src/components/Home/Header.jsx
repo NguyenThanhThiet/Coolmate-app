@@ -8,20 +8,19 @@ import { FaUser } from "react-icons/fa";
 import { HiShoppingBag } from "react-icons/hi2";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
-import { context } from '../../pages/Home.jsx';
 import Login from '../Login/Login.jsx'
+import { Link } from 'react-router-dom';
 
 function Header() {
-  const setLoginState=useContext(context)
 
   return (
     <div className='Header_container'>
 
       <div className='Header_Menu'>
-        <HiOutlineMenuAlt1/>
-        <IoSearch/>
+        <HiOutlineMenuAlt1 />
+        <IoSearch />
       </div>
-      
+
       <img className='Header_Logo' src="cool_mateLogo.jpg" alt="error" />
 
       <li className="Header_Nav">
@@ -56,8 +55,9 @@ function Header() {
           <IoSearch />
           <input type="text" placeholder='Tim kiếm sản phẩm...' />
         </div>
-
-        <FaUser onClick={()=>{setLoginState(true)}}/>
+   
+          <Link to={'/Login'}><FaUser/></Link>
+          
 
         <div className='Header_ActionUser_Buy'>
           <HiShoppingBag />
@@ -66,7 +66,7 @@ function Header() {
 
 
       </div>
-      
+
 
     </div>
   )

@@ -67,8 +67,9 @@
     background-color: transparent;
 }
 
-.Header_ActionUser>svg {
-    font-size: 30px;
+.Header_ActionUser svg {
+    font-size: 28px;
+    color: white;
 }
 .Header_ActionUser .Header_ActionUser_Buy
 {

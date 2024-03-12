@@ -1,0 +1,135 @@
+.NewProduct_container
+{
+    margin-top: 20px;
+    margin-right: 64px;
+    margin-left: 64px;
+    background-color:#0064ce ;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.NewProduct_container >.NewProduct_IconNext
+{
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    right: 8px;
+    z-index: 2;
+    top: 50%;
+}
+.NewProduct_container >h2
+{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.NewProduct_container >li
+{
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.NewProduct_container >li >ul
+{
+   flex: 2;
+   height: 480px;
+   background-color: white;
+   border-radius: 50px;
+}
+.NewProduct_container >li >ul>div:first-child
+{
+    position: relative;
+    width: 100%;
+    height: 332px;
+    border-radius: 10px 10px 0px 0px;
+}
+.NewProduct_container >li >ul>div:first-child>img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.NewProduct_container >li >ul>div:first-child>h2
+{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #104ec9;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 25px;
+    right: 8px;
+    top: 8px;
+}
+.NewProduct_container >li >ul>div:last-child
+{
+    width: 100%;
+    height: 148px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.NewProduct_container >li >ul>div:last-child>li
+{
+    list-style: none;
+    display: flex;
+    column-gap: 5px;
+}
+.NewProduct_container >li >ul>div:last-child>li>ul:first-child
+{
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 2px;
+    border: 1px solid black;
+}
+.NewProduct_container >li >ul>div:last-child>li>ul:first-child>p
+{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.NewProduct_container >li >ul>div:last-child>p:nth-child(2)
+{
+    font-weight: 600;
+    font-size: 14px;
+}
+.NewProduct_container >li >ul>div:last-child>p:nth-child(3)
+{
+    color: gray;
+    font-size: 14px;
+}
+.NewProduct_container >li >ul>div:last-child>div
+{
+    display: flex;
+    font-size: 10px;
+    column-gap: 15px;
+    align-items: center;
+}
+.NewProduct_container >li >ul>div:last-child>div>div
+{
+    position: relative;
+    color: gray;
+    font-size: 11px;
+}
+.NewProduct_container >li >ul>div:last-child>div>div>hr
+{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.NewProduct_container >li >ul>div:last-child>div>h2:last-child
+{
+    color: red;
+    font-weight: 400;
+    font-size: 15px;
+}
