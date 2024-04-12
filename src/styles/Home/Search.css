@@ -1,0 +1,235 @@
+.Header_UI_Search
+{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: transparent;
+    height: 100vh;
+}
+.Header_UI_Search .Header_UI_Search_Infomation
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 107px;
+    background-color: white;
+    column-gap: 80px;
+}
+.Header_UI_Search .Header_UI_Search_Infomation >div
+{
+    width: 500px;
+    background-color: #eeeeee;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.Header_UI_Search .Header_UI_Search_Infomation >div>input
+{
+    flex: 4;
+    border-radius: 25px;
+    background-color: transparent;
+    border: none;
+    padding: 0px 25px;
+    height: 100%;
+    outline: none;
+}
+.Header_UI_Search .Header_UI_Search_Infomation >div>svg
+{
+    flex: 1;
+    font-size: 30px;
+    color: #99a8af;
+}
+.Header_UI_Search .Header_UI_Search_Infomation >svg
+{
+    font-size: 30px;
+    color: #676767;
+}
+
+.Header_UI_Search .Header_UI_Search_Result
+{
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 80px 100px 0px 100px;
+    min-height: 250px;
+    max-height: 100vh;
+}
+.Header_UI_Search .Header_UI_Search_Result >div>div>p
+{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.Header_UI_Search .Header_UI_Search_Result >div>div>li
+{
+    display: flex;
+    list-style: none;
+    column-gap: 15px;
+}
+.Header_UI_Search .Header_UI_Search_Result >div>div:first-child>li>ul
+{
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 0px 15px 0px 15px;
+    line-height: 30px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.Header_UI_Search .Header_UI_Search_Result >div>div:last-child
+{
+    margin-top: 50px;
+}
+
+.Header_UI_Search .Header_UI_Search_Result >div>div:last-child>li
+{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+.Header_UI_Search .Header_UI_Search_Result >div>div:last-child>li>ul
+{
+    flex: 2.5;
+}
+.Header_UI_Search .Header_UI_Search_Result >div>div:last-child>li>ul>img
+{
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.Header_UI_Search_Result_Current >li
+{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+    column-gap: 20px;
+    list-style: none;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.Header_UI_Search_Result_Current >li >ul
+{
+   flex: 2.5;
+   height: fit-content;
+   background-color: white;
+   border-radius: 50px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:first-child
+{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px 10px 0px 0px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:first-child>img
+{
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    border: 1px solid rgb(218, 209, 209);
+}
+.Header_UI_Search_Result_Current >li >ul>div:first-child>h2
+{
+    position: absolute;
+    width: fit-content;
+    padding: 0px 10px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #009739;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 25px;
+    right: 8px;
+    top: 8px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:first-child>div
+{
+    position:absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-weight: 600;
+}
+.Header_UI_Search_Result_Current >li >ul>div:first-child>div>p:last-child
+{
+    color: #3760d0;
+}
+
+.Header_UI_Search_Result_Current >li >ul>div:last-child
+{
+    width: 100%;
+    height: 148px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>li
+{
+    list-style: none;
+    display: flex;
+    column-gap: 5px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>li>ul:first-child
+{
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 2px;
+    border: 1px solid black;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>li>ul:first-child>p
+{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>p:nth-child(2)
+{
+    font-weight: 600;
+    font-size: 14px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>p:nth-child(3)
+{
+    color: gray;
+    font-size: 14px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>div
+{
+    display: flex;
+    font-size: 10px;
+    column-gap: 15px;
+    align-items: center;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>div>div
+{
+    position: relative;
+    color: gray;
+    font-size: 11px;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>div>div>hr
+{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.Header_UI_Search_Result_Current >li >ul>div:last-child>div>h2:last-child
+{
+    color: red;
+    font-weight: 400;
+    font-size: 15px;
+}

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
+.Header
+{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
 .Header_container {
     height: 100px;
     color: white;
@@ -14,7 +19,7 @@
     display: none;
 }
 .Header_container .Header_Logo {
-    width: 120px;
+    width: 90px;
     height: 100px;
 }
 
@@ -26,17 +31,17 @@
     font-weight: 600;
     font-style: normal;
 }
-.Header_Nav ul
+.Header_Nav li
 {
     display: flex;
     align-items: center;
     height: 100%;
     padding: 0px 16px;
 }
-.Header_Nav ul:hover
+/* .Header_Nav ul:hover
 {
     background-color: rgb(71, 70, 70);
-}
+} */
 
 
 
@@ -44,6 +49,15 @@
     display: flex;
     column-gap: 15px;
     align-items: center;
+}
+.Header_User{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+.Header_User >svg 
+{
+    font-size: 15px !important;
 }
 
 .Header_ActionUser .Header_ActionUser_Button {
@@ -91,4 +105,68 @@
     line-height: 15px;
     top: 20px;
     left: 15px;
+}
+.Header_hidden
+{
+    display: none;
+}
+.Option_Account
+{
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    background-color: gray;
+    top: 65px;
+    right: 30px;
+    padding: 10px 0px;
+    font-size: 15px;
+    animation-name: scale;
+    animation-duration: 250ms;
+    z-index: 2;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.Option_Account ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.Option_Account ul>li
+{
+    display: flex;
+    column-gap: 10px;
+    padding: 10px 20px;
+}
+.Option_Account ul>li>svg
+{
+    font-size: 20px;
+    color: black;
+}
+.Option_Account ul>li:hover
+{
+    background-color: white;
+    color: black;
+}
+.Header_Nav >.Selected
+{
+    background-color: orange;
+}
+@keyframes scale {
+    0%
+    {
+        scale: 0;
+    }
+    50%
+    {
+       scale: 0.5;
+    }
+    70%
+    {
+        scale: 1.1;
+    }
+    100%
+    {
+        scale: 1;
+    }
 }

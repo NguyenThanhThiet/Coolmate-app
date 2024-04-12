@@ -1,18 +1,32 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import '../../styles/Home/Flashsale.css'
 
 import { GrLinkNext } from "react-icons/gr";
-function Flashsale() {
-  const listProduct = [{ image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }
-    , { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
-  { image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
-  { image: "/product/product2.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" },
-  { image: "/product/product1.jpg", title: "Áo tay dài Oversize 84Rizing Mickey Hockey", price: "???đ", priceOrigin: "399.000đ" }]
-  
-  const [countProductList,setCountProductList]=useState(0)
+import { databaseContext } from '../../pages/Home';
+import Slider from 'react-slick';
+import {useNavigate} from 'react-router-dom'
+function Flashsale({setIdProduct}) {
+  const database=[...useContext(databaseContext)]
+  console.log(database)
+  //config slick slider
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 200,
+    autoplaySpeed: 5000,
+    cssEase: "linear"
+  }
+  //handle click detail product
+  const navigate=useNavigate()
+  const handleDetailProduct=(id)=>
+  {
+      window.localStorage.setItem("idProduct",id)
+      setIdProduct(id)
+      navigate(`/Product/${id}`)
+  }
   return (
     <div className='Flashsale_container'>
       <div className='Flashsale_banner'>
@@ -32,32 +46,31 @@ function Flashsale() {
         </div>
 
       </div>
-
-
       <div>
-        <GrLinkNext className='Flashsale_ButtonNext' onClick={()=>countProductList!=listProduct.length-4?setCountProductList(countProductList+4):setCountProductList(0)} />
-
-        <li>
-          {listProduct.map((value, index)=>{
-            if(index>=countProductList && index<=countProductList+3)
+      <Slider {...settings}>
+          {database.map((value, index)=>{
+            if(value.state==="Sale")
               return (
-              <ul key={index}>
-                <img src={value.image} alt="" />
-                <div>
+              <div key={index} onClick={()=>handleDetailProduct(value.id)}>
+                <div className='Flashsale_Img'>
+                  <img src={value.img} alt="error" />
+                </div>
+                <div className='Flashsale_Info'>
                   <p>{value.title}</p>
                   <div>
                     <h2>{value.price}</h2>
                     <div>
-                      <p>{value.price}</p>
+                      <p>{value.priceOrigin}</p>
                       <hr />
                     </div>
+                    <p>{value.discount}</p>
                   </div>
                 </div>
-              </ul>)
+              </div>)
           })
-         
           }
-        </li>
+        </Slider>
+        
       </div>
     </div>
   )

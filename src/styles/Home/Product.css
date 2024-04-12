@@ -1,0 +1,247 @@
+.Product_container
+{
+    padding: 70px 64px 0px 64px;
+}
+
+.Product_container .Product_body >img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Product_container .Product_body .Product_tabBar
+{
+    margin-bottom: 25px;
+    padding: 0px 180px;
+}
+.Product_container .Product_body .Product_tabBar>ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.Product_container .Product_body .Product_tabBar>ul>li
+{
+    width: fit-content;
+    padding: 14px 40px;
+    background-color: #dbdbdb;
+    font-size: 20px;
+    color: black;
+    border-radius: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.Product_body >ul
+{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    column-gap: 20px;
+    list-style: none;
+    overflow-x: hidden;
+    row-gap: 20px;
+}
+.Product_body >ul >li
+{
+   flex: 2;
+   height: fit-content;
+   background-color: white;
+   border-radius: 50px;
+}
+.Product_body >ul >li>div:first-child
+{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px 10px 0px 0px;
+}
+.Product_body >ul >li>div:first-child>img
+{
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+    border: 1px solid rgb(218, 209, 209);
+}
+/*  */
+ .Product_Size
+{
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), hsla(0, 0%, 100%, .4);
+    bottom: 20px;
+    min-height: 100px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    animation-name: appear;
+    animation-duration: 200ms;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  .Product_Size>ul
+{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-top: 10px;
+}
+  .Product_Size>ul>li
+{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 13px;
+    text-align: center;
+}
+.Product_body  .Product_Size>ul>li:hover
+{
+    background-color: black;
+    color: white;
+}
+/*  */
+.Product_body >ul >li>div:first-child>h2
+{
+    position: absolute;
+    width: fit-content;
+    padding: 0px 10px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #009739;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    line-height: 25px;
+    right: 8px;
+    top: 8px;
+}
+.Product_body .Product_State
+{
+    position:absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-weight: 600;
+}
+.Product_body >ul >li>div:first-child>div>p:last-child
+{
+    color: #3760d0;
+}
+
+.Product_body >ul >li>div:last-child
+{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.Product_body .Product_Color
+{
+    list-style: none;
+    display: flex;
+    column-gap: 3px;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+.Product_body .Product_Color>li
+{
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 2px;
+}
+.Product_body .Product_Color>.ColorSelected
+{
+    border: 1px solid gray;
+}
+.Product_body .Product_Color >li>p
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.Product_body >ul >li>div:last-child>p:nth-child(2)
+{
+    font-weight: 600;
+    font-size: 14px;
+}
+.Product_body >ul >li>div:last-child>p:nth-child(3)
+{
+    color: gray;
+    font-size: 14px;
+}
+.Product_body >ul >li>div:last-child>div
+{
+    display: flex;
+    font-size: 10px;
+    column-gap: 15px;
+    align-items: center;
+}
+.Product_body >ul >li>div:last-child>div>div
+{
+    position: relative;
+    color: gray;
+    font-size: 11px;
+}
+.Product_body >ul >li>div:last-child>div>div>hr
+{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.Product_body >ul >li>div:last-child>div>h2:last-child
+{
+    color: red;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.Product_body >div:last-child
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.Product_body >div:last-child h2
+{
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.Product_body >div:last-child p
+{
+    color: gray;
+    margin-bottom: 50px;
+}
+.selected
+{
+    background-color: #2f5acf !important;
+    color: white !important;
+}
+@keyframes appear {
+    0%{
+        bottom: 0px;
+        opacity: 0.1;
+    }
+    70%
+    {
+        bottom: 25px;
+        opacity: 0.7;
+    }
+    100%
+    {
+        bottom: 20px;
+        opacity: 1;
+    }
+}

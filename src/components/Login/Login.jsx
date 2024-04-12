@@ -11,27 +11,22 @@ import '../../styles/Login/Login.css'
 import { context } from '../../App';
 import { useForm } from 'react-hook-form';
 import { getAuth,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup } from 'firebase/auth';
+import * as yup from 'yup'
+import { yupResolver } from '@hookform/resolvers/yup'
 import Swal from 'sweetalert2';
 
 function Login() {
     //url page useNavigate
     const UrlPageNavigate=useNavigate()
-    //useForm to store data of user
-    const {register,handleSubmit}=useForm()
     //handle input of user
-    const handleInput=(data)=>
-    {
-        const regexEmail=/.+@gmail.com/
-        if(regexEmail.test(data.EmailUser))
-             {
-                if(data.PasswordUser.length<8)
-                   alert("Mật khẩu ít nhất 8 ký tự")
-                else
-                   loginUser(data)
-             }
-        else
-            alert("Email không đúng")
-    }
+    const schema = yup.object({
+        EmailUser: yup.string().email("Email không hợp lệ").required("Email không được bỏ trống"),
+        PasswordUser: yup.string().min(8, "Mật khẩu ít nhất 8 ký tự").required("Password không được bỏ trống")
+    })
+    //useForm to store data of user
+    const {register,handleSubmit,reset,formState:{errors}}=useForm({mode:'onChange',resolver:yupResolver(schema)})
+
+   
     //Login account user of firebase
     const firebase=useContext(context)
 
@@ -41,6 +36,7 @@ function Login() {
         signInWithEmailAndPassword(auth,data.EmailUser,data.PasswordUser)
         .then((useCredentials)=>
         {
+            window.localStorage.setItem('User',useCredentials.user.displayName)
             Swal.fire({
                 title: "Thanh công",
                 text: "Bạn đã đăng nhập thành công",
@@ -106,12 +102,23 @@ function Login() {
                             <hr></hr>
                         </div>
 
-                        <form onSubmit={handleSubmit(handleInput)}>
-                            <input type="text" placeholder='Email/SĐT của bạn' {...register("EmailUser")} required/>
-                            <div>
-                                <input type={stateInputPassword} placeholder='Mật khẩu' {...register("PasswordUser")} required/>
-                                    {stateInputPassword=="password"?<FaRegEyeSlash onClick={()=>setStateInputPassword("text")}/>:<FaRegEye onClick={()=>setStateInputPassword("password")}/>}
+                        <form onSubmit={handleSubmit(loginUser)}>
+                        <div>
+                                <div>
+                                    <input type="text" placeholder='Email/SĐT của bạn' {...register("EmailUser")} required autoComplete='off' />
+                                </div>
+
+                                <span>{errors.EmailUser?.message}</span>
                             </div>
+
+                            <div>
+                                <div>
+                                    <input type={stateInputPassword} placeholder='Mật khẩu' {...register("PasswordUser")} required />
+                                    {stateInputPassword == "password" ? <FaRegEyeSlash onClick={() => setStateInputPassword("text")} /> : <FaRegEye onClick={() => setStateInputPassword("password")} />}
+                                </div>
+                                <span>{errors.PasswordUser?.message}</span>
+                            </div>
+
                             <button>Đăng nhập</button>
                         </form>
 

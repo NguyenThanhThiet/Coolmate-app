@@ -1,0 +1,714 @@
+[
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct1.jpg?alt=media&token=13ad2fea-ba1d-4239-8e14-b0995a9083df",
+    "title": "Mũ Lưỡi Trai Classic Cap Logo Coolmate",
+    "price": "119.000đ",
+    "priceOrigin": "199.000đ",
+    "discount": "-40%",
+    "evaluate": "4.9",
+    "material": "Chống tia UV / Xanh Lá",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "12",
+    "state": "Sale",
+    "id": "1",
+    "category": "Phụ kiện"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct2.jpg?alt=media&token=e4846626-193a-4e99-b682-b9a98bffee99",
+    "title": "Áo Thể Thao dài tay Active V2",
+    "price": "159.000đ",
+    "priceOrigin": "199.000đ",
+    "discount": "-20%",
+    "evaluate": "4.9",
+    "material": "Thoáng Khí / Xanh ngọc",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "26",
+    "state": "New",
+    "id": "2",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct3.jpg?alt=media&token=8567b788-fccd-4608-880d-9a0a638b90ef",
+    "title": "Áo Nỉ chui đầu Lifewear",
+    "price": "259.000đ",
+    "priceOrigin": "339.000đ",
+    "discount": "-24%",
+    "evaluate": "4.8",
+    "material": "Giữ ấm / Xám sáng",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "31",
+    "state": "Sale",
+    "id": "3",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct4.jpg?alt=media&token=f2e28339-2dbf-4cd3-ba4e-1f4ad396cf17",
+    "title": "Áo Khoác Nam gilet phao Puffer",
+    "price": "429.000đ",
+    "priceOrigin": "499.000đ",
+    "discount": "-14%",
+    "evaluate": "5",
+    "material": "Siêu ấm / Xanh Navy",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "3",
+    "state": "Sale",
+    "id": "4",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct5.jpg?alt=media&token=b93e3aa9-8141-46b1-b3ed-b953a065d363",
+    "title": "Áo Thể Thao Essential",
+    "price": "119.000đ",
+    "priceOrigin": "199.000đ",
+    "discount": "-40%",
+    "evaluate": "4.9",
+    "material": "Ex-Dry / Trắng",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "23",
+    "state": "Sale",
+    "id": "5",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct6.jpg?alt=media&token=6a15d54a-a4e9-4482-8204-236ac93a3052",
+    "title": "Quần Dài Nam Thể Thao Pro Active",
+    "price": "299.000đ",
+    "priceOrigin": "399.000đ",
+    "discount": "-25%",
+    "evaluate": "4.8",
+    "material": "Chống nhăn / Xám",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "9",
+    "state": "Sale",
+    "id": "6",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct7.jpg?alt=media&token=e1792bd1-fc23-4af8-8eda-713b72e623e3",
+    "title": "Áo thun Cotton Trạm Phóng Tương Lai",
+    "price": "259.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.8",
+    "material": "Cotton Compact / Đen",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "42",
+    "state": "New",
+    "id": "7",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct8.jpg?alt=media&token=a92065ad-e790-465c-826b-ab570d7c3e04",
+    "title": "Áo Polo Care & Share Hành Trình Gom",
+    "price": "259.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "",
+    "material": "Thoáng khí / Trắng",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "",
+    "state": "New",
+    "id": "8",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct9.jpg?alt=media&token=b3b50224-f959-4421-a7c5-d5bc2fe277a1",
+    "title": "Áo thun Care & Share Hành Trình Gom",
+    "price": "249.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "5",
+    "material": "Vải 100% Cotton / Trắng",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "7",
+    "state": "New",
+    "id": "9",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct10.jpg?alt=media&token=93001bb2-9004-4342-8f3e-095d3e229ffa",
+    "title": "Quần Dài Nam UT Pants V2",
+    "price": "629.000đ",
+    "priceOrigin": "690.000đ",
+    "discount": "-9%",
+    "evaluate": "3.5",
+    "material": "Trượt nước / Xám đậm",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "2",
+    "state": "New",
+    "id": "10",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct11.jpg?alt=media&token=2021256e-e3f9-42cd-838b-b8df63e32740",
+    "title": "Áo Singlet Nam Chạy Bộ in Graphic Special",
+    "price": "189.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.8",
+    "material": "Mỏng nhẹ / Đen",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "3",
+    "state": "New",
+    "id": "11",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct12.jpg?alt=media&token=f28dfa3d-5cf4-47e9-acf0-9dd44234e33e",
+    "title": "Quần Shorts Nam Gym 5\"Essentials",
+    "price": "179.000đ",
+    "priceOrigin": "249.000đ",
+    "discount": "-28%",
+    "evaluate": "5",
+    "material": "Co giãn / Xanh Navy",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "7",
+    "state": "Sale",
+    "id": "12",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct13.jpg?alt=media&token=a847991a-5521-422c-9391-297a7768ad93",
+    "title": "Quần Dài Nam UT Pants",
+    "price": "629.000đ",
+    "priceOrigin": "690.000đ",
+    "discount": "-9%",
+    "evaluate": "4.8",
+    "material": "Trượt nước / Xám nhạt",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "23",
+    "state": "Sale",
+    "id": "13",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct14.jpg?alt=media&token=43aa042c-2daa-4897-b59e-6484bee41c6e",
+    "title": "Quần Shorts Nam Chạy Bộ Coolmate Basics",
+    "price": "99.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.8",
+    "material": "Thoáng mát / Cam",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "61",
+    "state": "Đáng Mua",
+    "id": "14",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct15.jpg?alt=media&token=f5b6041b-2766-416b-b9a9-851206cc432d",
+    "title": "Áo Khoác Nam có mũ Daily Wear",
+    "price": "499.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.9",
+    "material": "Chống UV 99% / Trắng",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "156",
+    "state": "Đáng Mua",
+    "id": "15",
+    "category": "Áo"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct16.jpg?alt=media&token=369497ef-2ff0-4e56-b696-f474859eac75",
+    "title": "Quần Jeans Nam Basics dáng Straight",
+    "price": "499.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.5",
+    "material": "Co giãn / Xanh sáng",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "14",
+    "state": "Đáng Mua",
+    "id": "16",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct17.jpg?alt=media&token=126f386d-da9a-485d-bf5b-4c4dcf3254f7",
+    "title": "Quần Jeans Nam Copper Denim Straight",
+    "price": "599.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.8",
+    "material": "Thoải mái / Xanh nhạt",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "28",
+    "state": "Đáng Mua",
+    "id": "17",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct18.jpg?alt=media&token=8f182c5e-6007-4f0b-ad52-57d1de700548",
+    "title": "Quần Dài Nam Kaki Excool",
+    "price": "499.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.8",
+    "material": "Slim fit / Xám đen",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "686",
+    "state": "New",
+    "id": "18",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct19.jpg?alt=media&token=15936b4d-5b77-43c2-965a-f18a4140edfe",
+    "title": "Quần dài nam Daily Pants",
+    "price": "299.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "4.8",
+    "material": "Excool / Xanh Navy",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "727",
+    "state": "New",
+    "id": "19",
+    "category": "Quần"
+  },
+  {
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct20.jpg?alt=media&token=ba5f27d1-4d64-4cfa-ae12-c2f8c55bcdca",
+    "title": "Áo thun Care & Share Hoi",
+    "price": "199.000đ",
+    "priceOrigin": "",
+    "discount": "",
+    "evaluate": "",
+    "material": "12 Con G Giáp Collection / Trắng",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ],
+    "pushchase": "",
+    "state": "Limited",
+    "id": "20",
+    "category": "Áo"
+  },
+  {
+    "id": "21",
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": "109.950đ",
+    "img": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "evaluate": 3.9,
+    "pushchase": 120,
+    "state": "New",
+    "category": "Balo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Mens Casual Premium Slim Fit T-Shirts ",
+    "price": "22.300đ",
+    "img": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "evaluate": 4.1,
+    "pushchase": 259,
+    "state": "New",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Mens Cotton Jacket",
+    "price": "55.990đ",
+    "img": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "evaluate": 4.7,
+    "pushchase": 500,
+    "state": "New",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Mens Casual Slim Fit",
+    "price": "15.990đ",
+    "img": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    "evaluate": 2.1,
+    "pushchase": 430,
+    "state": "New",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "25",
+    "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+    "price": "695.000đ",
+    "img": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "evaluate": 4.6,
+    "pushchase": 400,
+    "state": "New",
+    "category": "Phụ kiện",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Solid Gold Petite Micropave ",
+    "price": "168.000đ",
+    "img": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    "evaluate": 3.9,
+    "pushchase": 70,
+    "state": "New",
+    "category": "Phụ kiện",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "27",
+    "title": "White Gold Plated Princess",
+    "price": "9.990đ",
+    "img": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+    "evaluate": 3,
+    "pushchase": 400,
+    "state": "New",
+    "category": "Phụ kiện",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+    "price": "10.990đ",
+    "img": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+    "evaluate": 1.9,
+    "pushchase": 100,
+    "state": "Sale",
+    "category": "Phụ kiện",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "29",
+    "title": "Balo Da Bò Thật VINTAGE Phong Cách Sang Trọng BPL350",
+    "price": "1.890.000đ",
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct29.webp?alt=media&token=4e475ab4-974b-4049-a140-45e60d140d6d",
+    "evaluate": 3.3,
+    "pushchase": 203,
+    "state": "Sale",
+    "category": "Balo",
+    "material": "Da bò thật 100% (Bảo hành 5 năm)",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Balo thời trang hàn quốc GB-BL74",
+    "price": "359.000đ",
+    "priceOrigin": "559.000đ",
+    "discount": "10%",
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct30.jpg?alt=media&token=f7d6e7be-ff40-4a90-91c0-5f3c28fdc011",
+    "evaluate": 2.9,
+    "pushchase": 470,
+    "state": "Sale",
+    "category": "Balo",
+    "material": "Chất liệu vải Oxford chống thấm tốt, sợi Polyester bền chắc, đường may tỉ mỉ, tinh tế.",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Balo máy tính chống nước CL6939",
+    "price": "299.000đ",
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct31.jpeg?alt=media&token=4c21446a-2001-405b-b96e-7b5197c22de0",
+    "evaluate": 4.8,
+    "pushchase": 319,
+    "state": "New",
+    "category": "Balo",
+    "material": "Vải Oxford",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Balo Oxford",
+    "price": "580.000đ",
+    "priceOrigin": "950.000đ",
+    "discount": "30%",
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct32.webp?alt=media&token=09de66e5-c7e1-49de-b4e4-603149f9bab0",
+    "evaluate": 4.8,
+    "pushchase": 400,
+    "state": "Sale",
+    "category": "Balo",
+    "material": "Vải Oxford nhập khẩu",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "33",
+    "title": "Balo máy tính chống nước đa năng CL3123",
+    "price": "299.000đ",
+    "priceOrigin": "349.000đ",
+    "discount": "-20%",
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct33.jpeg?alt=media&token=5abb566c-6af3-4b87-ac21-623ec130dfb2",
+    "evaluate": 2.9,
+    "pushchase": 250,
+    "state": "Sale",
+    "category": "Balo",
+    "material": "Vải Oxford",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "34",
+    "title": "Balo cho trung tâm toeic 11419",
+    "price": "95.000đ",
+    "img": "https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/product%2Fproduct34.png?alt=media&token=333c9248-cf0a-4c92-9410-1bd4462b9bad",
+    "evaluate": 2.2,
+    "pushchase": 140,
+    "state": "Sale",
+    "category": "Balo",
+    "material": "Balo học sinh, balo trường anh ngữ có chất liệu vải, da, dù, kaki phù hợp với mọi yêu cầu của khách hàng.",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "35",
+    "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+    "price": "56.990đ",
+    "img": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+    "evaluate": 2.6,
+    "pushchase": 235,
+    "state": "New",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "36",
+    "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+    "price": "29.950đ",
+    "img": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+    "evaluate": 2.9,
+    "pushchase": 340,
+    "state": "Sale",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "37",
+    "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+    "price": "39.990đ",
+    "img": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+    "evaluate": 3.8,
+    "pushchase": 679,
+    "state": "New",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "38",
+    "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+    "price": "9.850đ",
+    "img": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+    "evaluate": 4.7,
+    "pushchase": 130,
+    "state": "New",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "39",
+    "title": "Opna Women's Short Sleeve Moisture",
+    "price": "7.950đ",
+    "img": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+    "evaluate": 4.5,
+    "pushchase": 146,
+    "state": "New",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  },
+  {
+    "id": "40",
+    "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+    "price": "12.990đ",
+    "img": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+    "evaluate": 3.6,
+    "pushchase": 145,
+    "state": "Sale",
+    "category": "Áo",
+    "color": [
+      {"code":"#5571c7","name":"Xanh trời"},
+      {"code":"#3c8db4","name":"Xanh"},
+      {"code":"#d5e092","name":"Vàng"},
+      {"code":"#0f0e10","name":"Đen"}
+    ]
+  }
+]

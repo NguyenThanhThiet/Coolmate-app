@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './pages/Home.jsx'
 import Login from './components/Login/Login.jsx';
@@ -6,6 +6,8 @@ import SignUp from './components/SignUp/SignUp.jsx';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { initializeApp } from "firebase/app";
+import DetailProduct from './pages/DetailProduct.jsx';
+import Account from './components/Account/Account.jsx';
 
 export const context = React.createContext()
 function App() {
@@ -21,15 +23,20 @@ function App() {
   };
   //initialize firebase
  const fireBase=initializeApp(firebaseConfig)
+ //store id product access
+ const [idProduct,setIdProduct]=useState(0)
+ useEffect(()=>setIdProduct(window.localStorage.getItem('idProduct')),[])
 
   return (
     <context.Provider value={fireBase}>
       <div className="App">
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home />}></Route>
+            <Route path='/' element={<Home setIdProduct={setIdProduct}/>}></Route>
             <Route path='/Login' element={<Login />}></Route>
             <Route path='/SignUp' element={<SignUp />}></Route>
+            <Route path={`/Product/${idProduct}`} element={<DetailProduct/>}></Route>
+            <Route path='/Account' element={<Account />}></Route>
           </Routes>
         </BrowserRouter>
       </div>

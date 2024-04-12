@@ -1,40 +1,30 @@
-.NewProduct_container
+.BestSale_container
 {
-    margin: 20px 64px 20px 64px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid gray;
-}
-.NewProduct_body
-{
-    background-color:#0064ce ;
-    border-radius: 10px;
-    padding: 20px;
+    margin-top: 70px;
+    margin-left: 64px;
+    margin-right: 64px;
     position: relative;
 }
-.NewProduct_body >.NewProduct_IconNext
+.BestSale_container >h2
 {
-    display: none;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
-.NewProduct_body >h2
-{
-    color: white;
-    font-size: 35px;
-    margin-bottom: 10px;
-}
-.NewProduct_body >div
+.BestSale_container >div
 {
     width: 100%;
 }
-.NewProduct_body .slick-slider
+.BestSale_container .slick-slider
 {
     position: relative;
     width: 100%;
 }
-.NewProduct_body .slick-list
+.BestSale_container .slick-list
 {
     overflow: hidden;
 }
-.NewProduct_body .slick-prev
+.BestSale_container .slick-prev
 {
    position: absolute;
    width: 50px;
@@ -49,7 +39,7 @@
    color: white;
    border: none;
 }
-.NewProduct_body .slick-next
+.BestSale_container .slick-next
 {
    position: absolute;
    width: 50px;
@@ -64,58 +54,44 @@
    color: white;
    border: none;
 }
-/* .NewProduct_body .slick-dots
-{
-    display: none !important;
-} */
-.NewProduct_body .slick-track
+
+.BestSale_container .slick-track
 {
     display: flex;
     column-gap: 20px;
     width: 100%;
 }
-.NewProduct_body .slick-slide
+.BestSale_container .slick-slide
 {
    flex: 2;
    height: fit-content;
    background-color: white;
    border-radius: 50px;
 }
-.NewProduct_body .slick-slide >div>div>div:first-child
+
+.BestSale_container .slick-slide >div>div>div
 {
     position: relative;
     width: 100%;
     height: fit-content;
     border-radius: 10px 10px 0px 0px;
 }
-.NewProduct_body .slick-slide >div>div>div:first-child>img
+
+.BestSale_container .slick-slide >div>div>div:first-child>img
 {
     width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    height: 380px;
+    border-radius: 10px;
+    height: 400px;
     border: 1px solid rgb(218, 209, 209);
 }
- .NewProduct_State
-{
-    position:absolute;
-    top: 8px;
-    left: 8px;
-    display: flex;
-    column-gap: 5px;
-    align-items: center;
-    font-weight: 600;
-}
-.NewProduct_State>p:last-child
-{
-    color: #3760d0;
-}
-.NewProduct_body .slick-slide .NewProduct_Size
+/**/
+.BestSale_container .slick-slide .BestSale_Size
 {
     position: absolute;
     z-index: 2;
     background: linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), hsla(0, 0%, 100%, .4);
     bottom: 20px;
-    min-height: 100px;;
+    min-height: 100px;
     padding: 5px 10px;
     font-size: 15px;
     font-weight: 500;
@@ -127,7 +103,7 @@
     transform: translateX(-50%);
 }
 
-.NewProduct_body .slick-slide .NewProduct_Size>ul
+.BestSale_container .slick-slide .BestSale_Size>ul
 {
     display: grid;
     list-style: none;
@@ -136,7 +112,7 @@
     column-gap: 5px;
     margin-top: 10px;
 }
-.NewProduct_body .slick-slide .NewProduct_Size>ul>li
+.BestSale_container .slick-slide .BestSale_Size>ul>li
 {
     background-color: white;
     border-radius: 10px;
@@ -144,16 +120,15 @@
     font-size: 13px;
     text-align: center;
 }
-.NewProduct_body .slick-slide .NewProduct_Size>ul>li:hover
+.BestSale_container .slick-slide .BestSale_Size>ul>li:hover
 {
     background-color: black;
     color: white;
 }
-
-.NewProduct_body .slick-slide >div>div>div:first-child>h2
+.BestSale_container .slick-slide >div>div>div:first-child>h2
 {
     position: absolute;
-    width: 40px;
+    width: fit-content;
     height: 25px;
     border-radius: 8px;
     background-color: #104ec9;
@@ -163,8 +138,23 @@
     line-height: 25px;
     right: 8px;
     top: 8px;
+    padding: 0px 10px;
 }
-.NewProduct_body .slick-slide >div>div>div:last-child
+.BestSale_container .slick-slide .BestSale_State
+{
+    position:absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-weight: 600;
+}
+.BestSale_container .slick-slide >div>div>div:first-child>div>p:last-child
+{
+    color: #3760d0;
+}
+.BestSale_container .slick-slide >div>div>div:last-child
 {
     width: 100%;
     height: 148px;
@@ -175,65 +165,65 @@
     flex-direction: column;
     row-gap: 5px;
 }
-.NewProduct_body .slick-slide .Product_Color
+.BestSale_container .slick-slide >div>div>div:last-child>ul
 {
     list-style: none;
     display: flex;
     column-gap: 5px;
 }
-.NewProduct_body .slick-slide .Product_Color>li
+.BestSale_container .slick-slide >div>div>div:last-child>ul>li
 {
     width: 40px;
     height: 25px;
     border-radius: 20px;
     padding: 2px;
 }
-.NewProduct_body .slick-slide .Product_Color>.ColorSelected
+.BestSale_container .slick-slide >div>div>div:last-child>ul> .ColorSelected
 {
     border: 1px solid black;
 }
-.NewProduct_body .slick-slide >div>div>div:last-child>ul>li>p
+.BestSale_container .slick-slide >div>div>div:last-child>ul>li>p
 {
-    background-color: red;
     width: 100%;
     height: 100%;
     border-radius: 20px;
 }
-.NewProduct_body .slick-slide >div>div>div:last-child>p:nth-child(2)
+.BestSale_container .slick-slide >div>div>div:last-child>p:nth-child(2)
 {
     font-weight: 600;
     font-size: 14px;
 }
-.NewProduct_body.slick-slide >div>div>div:last-child>p:nth-child(3)
+.BestSale_container.slick-slide >div>div>div:last-child>p:nth-child(3)
 {
     color: gray;
     font-size: 14px;
 }
-.NewProduct_body .slick-slide >div>div>div:last-child>div
+.BestSale_container .slick-slide >div>div>div:last-child>div
 {
     display: flex;
     font-size: 10px;
     column-gap: 15px;
     align-items: center;
 }
-.NewProduct_body .slick-slide >div>div>div:last-child>div>div
+.BestSale_container .slick-slide >div>div>div:last-child>div>div
 {
     position: relative;
     color: gray;
     font-size: 11px;
 }
-.NewProduct_body .slick-slide >div>div>div:last-child>div>div>hr
+.BestSale_container .slick-slide >div>div>div:last-child>div>div>hr
 {
     position: absolute;
     width: 100%;
     top: 50%;
 }
-.NewProduct_body .slick-slide >div>div>div:last-child>div>h2:last-child
+.BestSale_container .slick-slide >div>div>div:last-child>div>h2:last-child
 {
     color: red;
     font-weight: 400;
     font-size: 15px;
 }
+
 @keyframes appear {
     0%{
         bottom: 0px;
