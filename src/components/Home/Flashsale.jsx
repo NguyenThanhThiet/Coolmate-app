@@ -7,7 +7,6 @@ import Slider from 'react-slick';
 import {useNavigate} from 'react-router-dom'
 function Flashsale({setIdProduct}) {
   const database=[...useContext(databaseContext)]
-  console.log(database)
   //config slick slider
   const settings = {
     dots: false,
@@ -58,12 +57,12 @@ function Flashsale({setIdProduct}) {
                 <div className='Flashsale_Info'>
                   <p>{value.title}</p>
                   <div>
-                    <h2>{value.price}</h2>
+                    <h2>{`${value.price} đ`}</h2>
                     <div>
-                      <p>{value.priceOrigin}</p>
+                      <p>{value.priceOrigin-value.price!=0?(`${value.priceOrigin} đ`):""}</p>
                       <hr />
                     </div>
-                    <p>{value.discount}</p>
+                    <p>{value.discount!=0?(`- ${value.discount}%`):""}</p>
                   </div>
                 </div>
               </div>)

@@ -39,11 +39,11 @@ function SignUp() {
             .then((userCredential) => {
                 //thanh cong
                 const user = userCredential.user
-                updateProfile(user, { displayName: data.NameUser, PhoneUser: data.PhoneUser })
+                updateProfile(user, { displayName: data.NameUser, phoneNumber: data.PhoneUser })
                     .then(() => {
                         //thanh cong
                         Swal.fire({
-                            title: "Thanh công",
+                            title: "Thành công",
                             text: "Bạn đã đăng nhập thành công",
                             icon: "success",
                         });

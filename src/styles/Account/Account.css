@@ -98,3 +98,9 @@
 {
     display: none;
 }
+
+.Account_container .SelectedItem
+{
+    background-color: black !important;
+    color: white !important;
+}

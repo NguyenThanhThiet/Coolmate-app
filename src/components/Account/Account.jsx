@@ -1,8 +1,10 @@
-import {React} from 'react'
+import {React, useEffect,useState} from 'react'
 import '../../styles/Account/Account.css'
 import {useNavigate} from 'react-router-dom'
 import Header from '../Home/Header'
 import Footer from '../Home/Footer'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+
 function Account() {
     const navigate=useNavigate()
     //logout account user
@@ -10,30 +12,38 @@ function Account() {
     window.localStorage.removeItem("User")
     navigate('/Login')
   }
-
-    return (
-        <>
-        <Header/>
+  const [user,setUser]=useState({})
+  //get current signed-in user
+  useEffect(()=>{setUser(JSON.parse(window.localStorage.getItem("User")))},[])
+  console.log(user)
+  //track item of options are selected
+  const handleSelectedItem=(event)=>{
+    Array.from(document.getElementsByClassName("Account_Infor_Options")[0].childNodes).map((value)=>{
+        value.classList.remove("SelectedItem")
+    })
+    event.target.classList.add("SelectedItem")
+  }
+  return (
         <div className='Account_container'>
             <div className='Account_NameUser'>
-                <h2>Hi, Nguyễn Thanh Thiệt</h2>
+                <h2>Hi, {user?.displayName}</h2>
             </div>
 
             <div className='Account_Infor'>
                 <ul className='Account_Infor_Options'>
-                    <li>Lịch sử đơn hàng</li>
-                    <li>Lịch sử CoolCash</li>
-                    <li>Ví Voucher</li>
-                    <li>Sổ địa chỉ</li>
-                    <li>Đánh giá và phản hồi</li>
-                    <li>Chính sách & Câu hỏi thường gặp</li>
+                    <li className='SelectedItem' onClick={(event)=>handleSelectedItem(event)}>Lịch sử đơn hàng</li>
+                    <li onClick={(event)=>handleSelectedItem(event)}>Lịch sử CoolCash</li>
+                    <li onClick={(event)=>handleSelectedItem(event)}>Ví Voucher</li>
+                    <li onClick={(event)=>handleSelectedItem(event)}>Sổ địa chỉ</li>
+                    <li onClick={(event)=>handleSelectedItem(event)}>Đánh giá và phản hồi</li>
+                    <li onClick={(event)=>handleSelectedItem(event)}>Chính sách & Câu hỏi thường gặp</li>
                     <li onClick={()=>{logout()}}>Đăng xuất</li>
                 </ul>
                 <div className='Account_Infor_User'>
                     <div>
                         <h2>Thông tin tài khoản</h2>
-                        <p>Họ và tên: </p>
-                        <p>Số điện thoại</p>
+                        <p>Họ và tên: {user?.displayName}</p>
+                        <p>Số điện thoại: {user?.PhoneUser!=null?user.Phone:"Chưa cập nhật!"}</p>
                         <p>Giới tính: Chưa cập nhật!</p>
                         <p>Ngày sinh: Chưa cập nhật!</p>
                         <p>Chiều cao: Chưa cập nhật!</p>
@@ -43,15 +53,13 @@ function Account() {
 
                     <div>
                         <h2>Thông tin đăng nhập</h2>
-                        <p>Email: </p>
-                        <p>Mật khẩu: </p>
+                        <p>Email:  {user?.email}</p>
+                        <p>Mật khẩu:  **********</p>
                         <button>CẬP NHẬT</button>
                     </div>
                 </div>
             </div>
         </div>
-        <Footer/>
-        </>
     )
 }
 

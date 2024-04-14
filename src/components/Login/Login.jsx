@@ -36,7 +36,7 @@ function Login() {
         signInWithEmailAndPassword(auth,data.EmailUser,data.PasswordUser)
         .then((useCredentials)=>
         {
-            window.localStorage.setItem('User',useCredentials.user.displayName)
+            window.localStorage.setItem('User',JSON.stringify(useCredentials.user))
             Swal.fire({
                 title: "Thanh công",
                 text: "Bạn đã đăng nhập thành công",

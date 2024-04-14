@@ -22,14 +22,15 @@ import Search from './Search.jsx';
 import { remove } from 'firebase/database';
 
 import {Tooltip} from 'react-tooltip'
-function Header() {
+function Header({itemNav}) {
   const database = useContext(databaseContext)
 
   const navigate = useNavigate()
   const [NameUser, setNameUser] = useState();
   useEffect(() => {
-    setNameUser(window.localStorage.getItem('User'))
+    setNameUser(JSON.parse(window.localStorage.getItem('User'))?.displayName)
   }, [])
+  console.log(NameUser)
   //render ui search
   const renderUiSearch = (flag) => {
     if (flag == 0) {
@@ -47,15 +48,21 @@ function Header() {
     navigate('/Login')
   }
   //track selected item of menu
-  let itemSelectedPre=0;
-  const handleItemSelected=(event,item)=>
-  {
-    if(itemSelectedPre!=-1)
-       document.getElementsByClassName("Header_Nav")[0].childNodes[itemSelectedPre].classList.remove("Selected")
-    event.target.classList.add("Selected")
-    itemSelectedPre=item
+  const listMenuNav=["HOME","SẢN PHẨM","ĐỒ THỂ THAO","ĐỒ LÓT","MẶC HẰNG NGÀY"]
+  const handleClickItemNav=(index)=>{
+    switch(index){
+      case 0:
+        navigate('/')
+        break;
+      case 1:
+        navigate('/Nav_Product')
+        break;
+      default:
+        navigate('/')
+        break;
+    }
+    itemNav.setItemNav(index)
   }
-  
   return (
     <div className='Header'>
       <div className='Header_container'>
@@ -67,30 +74,10 @@ function Header() {
         <img className='Header_Logo' src="https://www.coolmate.me/images/logo-coolmate-new.svg?v=1cool_mateLogo.jpg" alt="error" />
 
         <ul className="Header_Nav" >
-          <li className='Selected' onClick={(event)=>handleItemSelected(event,0)}>
-            SALE
-          </li>
-          <li onClick={(event)=>handleItemSelected(event,1)}>
-            SẢN PHẨM
-          </li>
-          <li onClick={(event)=>handleItemSelected(event,2)}>
-            ĐỒ LÓT
-          </li>
-          <li onClick={(event)=>handleItemSelected(event,3)}>
-            ĐỒ THỂ THAO
-          </li>
-          <li onClick={(event)=>handleItemSelected(event,4)}>
-            MẶC HẰNG NGÀY
-          </li>
-          <li onClick={(event)=>handleItemSelected(event,5)}>
-            NƯỚC HOA
-          </li>
-          <li onClick={(event)=>handleItemSelected(event,6)}>
-            SẢN XUẤT RIÊNG
-          </li>
-          <li onClick={(event)=>handleItemSelected(event,7)}>
-            CARE&SHARE
-          </li>
+          {listMenuNav.map((value,index)=>{
+            return (<li className={index==itemNav.itemNav?"Selected":""} onClick={()=>handleClickItemNav(index)}>{value}
+          </li>)
+          })}
         </ul>
 
         <div className='Header_ActionUser' >

@@ -31,17 +31,15 @@ function Home({setIdProduct}) {
       console.log(error)
     })
   }, [])
-
+  
   return (
     <div className='Home'>
       <databaseContext.Provider value={database}>
-        <Header />
         <Banner />
         <Flashsale setIdProduct={setIdProduct}/>
         <NewProduct setIdProduct={setIdProduct}/>
         <BestSale setIdProduct={setIdProduct}/>
         <Product setIdProduct={setIdProduct}/>
-        <Footer />
       </databaseContext.Provider>
     </div>
   )

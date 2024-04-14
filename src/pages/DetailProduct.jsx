@@ -20,7 +20,6 @@ function DetailProduct() {
     return (
         <databaseContextDetail.Provider value={database}>
             <div className='DetailProduct_Container'>
-                <Header />
                 <DetailProBuy />
             </div>
         </databaseContextDetail.Provider>

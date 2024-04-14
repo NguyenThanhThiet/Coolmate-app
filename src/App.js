@@ -8,6 +8,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { initializeApp } from "firebase/app";
 import DetailProduct from './pages/DetailProduct.jsx';
 import Account from './components/Account/Account.jsx';
+import Header from './components/Home/Header.jsx';
+import Footer from './components/Home/Footer.jsx';
+import Home_Product from './components/Home/Nav_Product/Home_Product.jsx';
 
 export const context = React.createContext()
 function App() {
@@ -22,21 +25,48 @@ function App() {
     measurementId: "G-LTZFNN6MBT"
   };
   //initialize firebase
- const fireBase=initializeApp(firebaseConfig)
- //store id product access
- const [idProduct,setIdProduct]=useState(0)
- useEffect(()=>setIdProduct(window.localStorage.getItem('idProduct')),[])
-
+  const fireBase = initializeApp(firebaseConfig)
+  //store id product access
+  const [idProduct, setIdProduct] = useState(0)
+  useEffect(() => setIdProduct(window.localStorage.getItem('idProduct')), [])
+  //track item navigation of header
+  const [itemNav,setItemNav]=useState(0)
   return (
     <context.Provider value={fireBase}>
       <div className="App">
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home setIdProduct={setIdProduct}/>}></Route>
+
+            <Route path='/' element={<>
+                <Header itemNav={{itemNav,setItemNav}}/>
+                <Home setIdProduct={setIdProduct} />
+                <Footer />
+              </>
+            }></Route>
+
             <Route path='/Login' element={<Login />}></Route>
+
             <Route path='/SignUp' element={<SignUp />}></Route>
-            <Route path={`/Product/${idProduct}`} element={<DetailProduct/>}></Route>
-            <Route path='/Account' element={<Account />}></Route>
+
+            <Route path={`/Product/${idProduct}`} element={<>
+              <Header itemNav={{itemNav,setItemNav}}/>
+              <DetailProduct />
+              <Footer />
+            </>}></Route>
+
+            <Route path='/Account' element={<>
+              <Header itemNav={{itemNav,setItemNav}}/>
+              <Account />
+              <Footer />
+            </>}></Route>
+
+            <Route path='/Nav_Product' element={<>
+              <Header itemNav={{itemNav,setItemNav}}/>
+              <Home_Product setIdProduct={setIdProduct}/>
+              <Footer />
+            </>}>
+
+            </Route>
           </Routes>
         </BrowserRouter>
       </div>
