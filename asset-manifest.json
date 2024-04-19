@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Coolmate-app/static/css/main.fad2614b.css",
+    "main.js": "/Coolmate-app/static/js/main.d30d046d.js",
+    "index.html": "/Coolmate-app/index.html",
+    "main.fad2614b.css.map": "/Coolmate-app/static/css/main.fad2614b.css.map",
+    "main.d30d046d.js.map": "/Coolmate-app/static/js/main.d30d046d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fad2614b.css",
+    "static/js/main.d30d046d.js"
+  ]
+}
