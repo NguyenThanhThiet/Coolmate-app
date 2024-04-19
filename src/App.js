@@ -12,7 +12,9 @@ import Header from './components/Home/Header.jsx';
 import Footer from './components/Home/Footer.jsx';
 import Home_Product from './components/Home/Nav_Product/Home_Product.jsx';
 
+import axios from 'axios';
 export const context = React.createContext()
+export const contextData = React.createContext()
 function App() {
   //config firebase
   const firebaseConfig = {
@@ -30,45 +32,61 @@ function App() {
   const [idProduct, setIdProduct] = useState(0)
   useEffect(() => setIdProduct(window.localStorage.getItem('idProduct')), [])
   //track item navigation of header
-  const [itemNav,setItemNav]=useState(0)
+  const [itemNav, setItemNav] = useState(0)
+  //get database
+  const [database, setDatabase] = useState([])
+  useEffect(() => {
+    axios({ method: "GET", url: "https://65f51306f54db27bc0229836.mockapi.io/product" })
+      .then((reponse) => {
+        setDatabase(reponse.data)
+        console.log(reponse.data)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }, [])
+
   return (
     <context.Provider value={fireBase}>
       <div className="App">
+      <contextData.Provider value={database}>
         <BrowserRouter>
           <Routes>
+            
 
-            <Route path='/' element={<>
-                <Header itemNav={{itemNav,setItemNav}}/>
+              <Route path='/' element={<>
+                <Header itemNav={{ itemNav, setItemNav }} />
                 <Home setIdProduct={setIdProduct} />
                 <Footer />
               </>
-            }></Route>
+              }></Route>
 
-            <Route path='/Login' element={<Login />}></Route>
+              <Route path='/Login' element={<Login />}></Route>
 
-            <Route path='/SignUp' element={<SignUp />}></Route>
+              <Route path='/SignUp' element={<SignUp />}></Route>
 
-            <Route path={`/Product/${idProduct}`} element={<>
-              <Header itemNav={{itemNav,setItemNav}}/>
-              <DetailProduct />
-              <Footer />
-            </>}></Route>
+              <Route path={`/Product/${idProduct}`} element={<>
+                <Header itemNav={{ itemNav, setItemNav }} />
+                <DetailProduct />
+                <Footer />
+              </>}></Route>
 
-            <Route path='/Account' element={<>
-              <Header itemNav={{itemNav,setItemNav}}/>
-              <Account />
-              <Footer />
-            </>}></Route>
+              <Route path='/Account' element={<>
+                <Header itemNav={{ itemNav, setItemNav }} />
+                <Account />
+                <Footer />
+              </>}></Route>
 
-            <Route path='/Nav_Product' element={<>
-              <Header itemNav={{itemNav,setItemNav}}/>
-              <Home_Product setIdProduct={setIdProduct}/>
-              <Footer />
-            </>}>
+              <Route path='/Nav_Product' element={<>
+                <Header itemNav={{ itemNav, setItemNav }} />
+                <Home_Product setIdProduct={setIdProduct} />
+                <Footer />
+              </>}>
 
-            </Route>
+              </Route>
           </Routes>
         </BrowserRouter>
+        </contextData.Provider>
       </div>
     </context.Provider>
   );

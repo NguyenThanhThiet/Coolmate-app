@@ -3,11 +3,10 @@ import '../../styles/Home/Search.css'
 import { IoMdClose } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
-import { databaseContext } from '../../pages/Home';
-import { databaseContextDetail } from '../../pages/DetailProduct';
+import { contextData } from '../../App';
 function Search() {
-  const context=useContext(databaseContext)?databaseContext:databaseContextDetail
-  const database = useContext(context)
+  
+  const database = useContext(contextData)
 
     //render ui search
   const renderUiSearch = (flag) => {
@@ -98,12 +97,12 @@ function Search() {
                         <p className='Product_Title'>{value.title}</p>
                         <p className='Product_Category'>{value.material}</p>
                         <div>
-                          <h2 className='Product_Price'>{value.price}</h2>
+                          <h2 className='Product_Price'>{`${value.price} đ`}</h2>
                           <div>
-                            <h2>{value.price_Origin}</h2>
+                            <h2>{value.priceOrigin-value.price!=0?(`${value.priceOrigin} đ`):""}</h2>
                             <hr />
                           </div>
-                          <h2>{value.discount}</h2>
+                          <h2>{value.discount!=0?(`- ${value.discount}%`):""}</h2>
                         </div>
                       </div>
                     </ul>)

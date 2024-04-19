@@ -55,7 +55,7 @@
     margin-right: 200px;
     background-color: white;
     border-radius: 10px;
-    padding: 80px 100px 0px 100px;
+    padding: 80px 50px 0px 50px;
     min-height: 250px;
     max-height: 100vh;
 }
@@ -219,7 +219,7 @@
 {
     position: relative;
     color: gray;
-    font-size: 11px;
+    font-size: 7px;
 }
 .Header_UI_Search_Result_Current >li >ul>div:last-child>div>div>hr
 {

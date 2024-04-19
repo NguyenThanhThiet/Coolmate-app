@@ -16,15 +16,16 @@ import { FaStar } from "react-icons/fa";
 
 import Login from '../Login/Login.jsx'
 import { Link, useNavigate } from 'react-router-dom';
-import { databaseContext } from '../../pages/Home.jsx';
 
 import Search from './Search.jsx';
 import { remove } from 'firebase/database';
 
 import {Tooltip} from 'react-tooltip'
+import { contextData } from '../../App.js';
 function Header({itemNav}) {
-  const database = useContext(databaseContext)
-
+  const database = useContext(contextData)
+  console.log("database: ",database)
+  
   const navigate = useNavigate()
   const [NameUser, setNameUser] = useState();
   useEffect(() => {
@@ -48,7 +49,7 @@ function Header({itemNav}) {
     navigate('/Login')
   }
   //track selected item of menu
-  const listMenuNav=["HOME","SẢN PHẨM","ĐỒ THỂ THAO","ĐỒ LÓT","MẶC HẰNG NGÀY"]
+  const listMenuNav=["HOME","SẢN PHẨM"]
   const handleClickItemNav=(index)=>{
     switch(index){
       case 0:
@@ -71,7 +72,7 @@ function Header({itemNav}) {
           <IoSearch />
         </div>
 
-        <img className='Header_Logo' src="https://www.coolmate.me/images/logo-coolmate-new.svg?v=1cool_mateLogo.jpg" alt="error" />
+        <img className='Header_Logo' src="https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/logo%2Fsnapedit_1713535505965.png?alt=media&token=9e41e3e3-05a4-4891-a5a3-10ee0ecd34cf" alt="error" />
 
         <ul className="Header_Nav" >
           {listMenuNav.map((value,index)=>{

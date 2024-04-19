@@ -249,8 +249,8 @@ function Home_Product({ setIdProduct }) {
           </ul>
 
           {
-            lengthProduct + 5 >= database.length ? undefined : (<div>
-              <h2 onClick={() => lengthProduct < database.length ? setLengthProduct(lengthProduct + 4) : null}>XEM THÊM</h2>
+            lengthProduct + 4 >= tempDatabase.length ? undefined : (<div>
+              <h2 onClick={() => lengthProduct < tempDatabase.length ? setLengthProduct(lengthProduct + 4) : null}>XEM THÊM</h2>
               <p>Hiển thị {lengthProduct + 4} trên tổng số {tempDatabase.length} sản phẩm</p>
             </div>)
 
