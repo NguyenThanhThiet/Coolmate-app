@@ -1,7 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
+import Login from '../Login/Login.jsx'
+import { Link, useNavigate } from 'react-router-dom';
+import { remove } from 'firebase/database';
+import {Tooltip} from 'react-tooltip'
 
-import '../../styles/Home/Header.css'
-import '../../styles/Home/Responsive/HeaderRes.css'
+import { contextData } from '../../App.js';
+import Search from '../Home/Search.jsx';
+
+import '../../styles/Header/Header.css'
+import '../../styles/Responsive/HeaderRes.css'
 
 import { IoSearch } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
@@ -12,16 +19,9 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { FaChevronDown } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
+import { RiMenu2Fill } from "react-icons/ri";
+import SideBar from './SideBar.jsx';
 
-
-import Login from '../Login/Login.jsx'
-import { Link, useNavigate } from 'react-router-dom';
-
-import Search from './Search.jsx';
-import { remove } from 'firebase/database';
-
-import {Tooltip} from 'react-tooltip'
-import { contextData } from '../../App.js';
 function Header({itemNav}) {
   const database = useContext(contextData)
   console.log("database: ",database)
@@ -33,6 +33,7 @@ function Header({itemNav}) {
   }, [])
   console.log(NameUser)
   //render ui search
+  const [stateSideBar,setStateSideBar]=useState(false);
   const renderUiSearch = (flag) => {
     if (flag == 0) {
       document.getElementsByClassName("Header_container")[0].classList.add("Header_hidden")
@@ -48,8 +49,15 @@ function Header({itemNav}) {
     window.localStorage.removeItem("User")
     navigate('/Login')
   }
+  //render ui sidebar
+  const renderUiSideBar=(flag)=>{
+   if(flag)
+    setStateSideBar(false)
+   else
+     setStateSideBar(true)
+  }
   //track selected item of menu
-  const listMenuNav=["HOME","SẢN PHẨM"]
+  const listMenuNav=["HOME","SẢN PHẨM","QUẦN ÁO","PHỤ KIỆN"]
   const handleClickItemNav=(index)=>{
     switch(index){
       case 0:
@@ -67,13 +75,16 @@ function Header({itemNav}) {
   return (
     <div className='Header'>
       <div className='Header_container'>
-        <div className='Header_Menu'>
-          <HiOutlineMenuAlt1 />
-          <IoSearch />
+        <div className='Header_button_menu'>
+          {
+            stateSideBar==true?<IoMdClose onClick={()=>renderUiSideBar(stateSideBar)}/>:<RiMenu2Fill onClick={()=>renderUiSideBar(stateSideBar)}/>
+          }
+          <IoSearch onClick={() => renderUiSearch(0)}/>
         </div>
 
-        <img className='Header_Logo' src="https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/logo%2Fsnapedit_1713535505965.png?alt=media&token=9e41e3e3-05a4-4891-a5a3-10ee0ecd34cf" alt="error" />
+        <SideBar className={stateSideBar==true?'showSidebar':''}/>
 
+        <img className='Header_Logo' src="https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/logo%2FlogoShop-removebg-preview.png?alt=media&token=53bfbe24-4ff8-4344-abfd-58859c00d84d" alt="error" />
         <ul className="Header_Nav" >
           {listMenuNav.map((value,index)=>{
             return (<li className={index==itemNav.itemNav?"Selected":""} onClick={()=>handleClickItemNav(index)}>{value}
@@ -106,9 +117,6 @@ function Header({itemNav}) {
                       </ul>
                     </div>
                 </Tooltip>
-                
-                
-
 
               </div>)
           }
@@ -121,7 +129,7 @@ function Header({itemNav}) {
 
       </div>
       <Search />
-
+      
 
 
     </div>

@@ -1,5 +1,11 @@
 import React, { useState,useContext,useMemo, useEffect } from 'react'
-import Header from '../components/Home/Header.jsx'
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { collection, query, where, getDocs } from "firebase/firestore";
+import { context } from '../App.js'
+import axios from 'axios'
+
+import Header from '../components/Header/Header.jsx'
 import Login from '../components/Login/Login.jsx'
 import SignUp from '../components/SignUp/SignUp.jsx'
 import Banner from '../components/Home/Banner.jsx'
@@ -7,13 +13,10 @@ import Flashsale from '../components/Home/Flashsale.jsx'
 import NewProduct from '../components/Home/NewProduct.jsx'
 import BestSale from '../components/Home/BestSale.jsx'
 import Product from '../components/Home/Product.jsx'
-import Footer from '../components/Home/Footer.jsx'
+import Footer from '../components/Footer.jsx'
+
 import '../styles/Home/Home.css'
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { collection, query, where, getDocs } from "firebase/firestore";
-import { context } from '../App.js'
-import axios from 'axios'
+
 
 export const databaseContext = React.createContext()
 function Home({setIdProduct}) {

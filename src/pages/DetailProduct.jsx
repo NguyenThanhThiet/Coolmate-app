@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import '../styles/DetailPro/DetailPro_Buy.css'
 import axios from 'axios'
-import Header from '../components/Home/Header';
+import Header from '../components/Header/Header.jsx';
 import DetailProBuy from '../components/DetailPro/DetailProBuy';
 export const databaseContextDetail = React.createContext()
 function DetailProduct() {

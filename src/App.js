@@ -8,9 +8,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { initializeApp } from "firebase/app";
 import DetailProduct from './pages/DetailProduct.jsx';
 import Account from './components/Account/Account.jsx';
-import Header from './components/Home/Header.jsx';
-import Footer from './components/Home/Footer.jsx';
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer.jsx';
 import Home_Product from './components/Home/Nav_Product/Home_Product.jsx';
+
+import SideBar from './components/Header/SideBar.jsx';
 
 import axios from 'axios';
 export const context = React.createContext()
@@ -52,12 +54,12 @@ function App() {
       <contextData.Provider value={database}>
         <BrowserRouter>
           <Routes>
-            
 
               <Route path='/' element={<>
                 <Header itemNav={{ itemNav, setItemNav }} />
-                <Home setIdProduct={setIdProduct} />
+                <Home setIdProduct={setIdProduct} /> 
                 <Footer />
+                
               </>
               }></Route>
 

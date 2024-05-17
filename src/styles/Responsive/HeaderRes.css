@@ -1,0 +1,15 @@
+@media screen and (max-width:991px) {
+    .Header_container {
+        padding: 0px 32px;;
+    }
+    .Header_ActionUser .Header_ActionUser_Button{
+        display: none;
+    }
+    .Header_button_menu{
+        display: flex;
+        column-gap: 20px;
+    }
+    .Header_Nav{
+        display: none;
+    }
+}

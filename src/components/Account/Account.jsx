@@ -1,8 +1,8 @@
 import {React, useEffect,useState} from 'react'
 import '../../styles/Account/Account.css'
 import {useNavigate} from 'react-router-dom'
-import Header from '../Home/Header'
-import Footer from '../Home/Footer'
+import Header from '../Header/Header.jsx'
+import Footer from '../Footer'
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 function Account() {

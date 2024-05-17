@@ -30,7 +30,7 @@ function Flashsale({setIdProduct}) {
     <div className='Flashsale_container'>
       <div className='Flashsale_banner'>
 
-        <img src="bannerFlashsale.jpg" alt="" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/Banner%2FbannerFlashsale.jpg?alt=media&token=7d1a83b2-4cb0-4ddf-9a20-ed3ca30eb3a3" alt="" />
 
         <div>
           <div>

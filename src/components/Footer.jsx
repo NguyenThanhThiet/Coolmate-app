@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa6";
@@ -7,8 +9,8 @@ import { FaTiktok } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
-import '../../styles/Home/Footer.css'
-import { Link } from 'react-router-dom';
+import '../styles/Footer.css'
+
 function Footer() {
     return (
         <div className='Footer_container'>

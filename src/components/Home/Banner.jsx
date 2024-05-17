@@ -38,7 +38,7 @@ function Banner() {
       <ul className='Banner_Intro'>
         <li>
             <a href=""></a>
-            <img src="banner2.jpg" alt="" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/Banner%2Fbanner2.jpg?alt=media&token=36f35561-7dee-4828-b1f7-c9ea585ff77a" alt="" />
               
             <div>
                 <p>Quà tặng chỉ còn</p>
@@ -50,7 +50,7 @@ function Banner() {
         </li>
         <li>
             <a href=""></a>
-            <img src="banner3.jpg" alt="" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/coolmateweb-9fefb.appspot.com/o/Banner%2Fbanner3.jpg?alt=media&token=4e8dd62d-b179-464c-9029-3c40e1f03335" alt="" />
         </li>
       </ul>
     </div>
